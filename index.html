@@ -1,0 +1,289 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/Black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					 <h1>Raster Motion Study</h1>
+					 Sakib Rahman and Ciprian Gal
+			    </section>
+				<section data-background="images/Westgrid.jpg"></section>
+				<section>
+				     <h3> Rastered Case </h3>
+					    <section>
+						<h4> Simulation Setting</h4>
+						<ul>
+						  <li> 5 million events for moller and elastics each </li>
+						  <li> 5x5 mm raster, 0.065 mrad/mm at target center </li>
+						  <li> Configurations tested (Only horizontal offsets i.e. motion along x-axis):
+						        <ol>
+								   <li> Beam Position Offsets: -2, -1, 0, 1, 2 mm </li>
+								   <li> Beam Angle Offsets: -1, -0.5, 0, 0.5, 1 mm at target center </li>
+								</ol>
+						   </li>
+						   <li> Implementation has magnetic field and detector plane positions shifted by the small distances. These effects are ignored in analysis. </li>
+						</ul>
+						</section>
+						<section>
+						<h3> Position Offsets</h3>
+                         	   <img src="images/Position.jpg" style="width:450px;height:400px;">												   
+						 </section>
+						 <section>
+						<h3> Angle Offsets</h3>
+                         	   <img src="images/Angle.jpg" style="width:450px;height:400px;">												   
+						 </section>
+			    </section>
+				<section>
+				     <h3> MOLLER, RING 5, Position Offsets </h3>
+					 <section>
+						<picture>
+							<img src="images/position/moller_4_position_slope_summary.png">						
+						</picture>
+					 </section>
+					 <section>
+						<picture>
+							<img src="images/position/moller_1_position_slope_summary.png">						
+						</picture>
+					 </section>
+					 <section>
+						<picture>
+							<img src="images/position/moller_2_position_slope_summary.png">						
+						</picture>
+					 </section>
+					 <section>
+						<picture>
+							<img src="images/position/moller_3_position_slope_summary.png">						
+						</picture>
+					 </section>
+					 <section>
+						<picture>
+							<img src="images/position/moller_5_position_slope_summary.png">						
+						</picture>
+					 </section>
+					 <section>
+						<picture>
+							<img src="images/position/moller_6_position_slope_summary.png">						
+						</picture>
+					 </section>
+					 <section>
+						<picture>
+							<img src="images/position/moller_7_position_slope_summary.png">						
+						</picture>
+					 </section>
+				</section>
+				<section>
+				  <table>
+				  <tr><td>        Septant</td> <td>          Slope</td>  <td>    Slope Error</td> <td>% Diff Across 2 mm Hori Off</td></tr>
+<tr><td>              1</td> <td>        0.19540</td> <td>        0.01129</td> <td>            2.1</td></tr>
+<tr><td>              2</td> <td>        0.05115</td> <td>        0.01114</td> <td>            0.5</td></tr>
+<tr><td>              3</td> <td>       -0.14791</td> <td>        0.01129</td> <td>           -1.6</td></tr>
+<tr><td>              4</td> <td>       -0.22002</td> <td>        0.01131</td> <td>           -2.3</td></tr>
+<tr><td>              5</td> <td>       -0.16538</td> <td>        0.01118</td> <td>           -1.8</td></tr>
+<tr><td>              6</td> <td>        0.04888</td> <td>        0.01117</td> <td>            0.5</td></tr>
+<tr><td>              7</td> <td>        0.21299</td> <td>        0.01140</td> <td>            2.3</td></tr>
+                  </table>
+				</section>
+				<section>
+				     <h3> MOLLER, RING 5, Angle Offsets </h3>
+					 <section>
+						<picture>
+							<img src="images/angle/moller_4_angle_slope_summary.png">						
+						</picture>
+					 </section>
+					 <section>
+						<picture>
+							<img src="images/angle/moller_1_angle_slope_summary.png">						
+						</picture>
+					 </section>
+					 <section>
+						<picture>
+							<img src="images/angle/moller_2_angle_slope_summary.png">						
+						</picture>
+					 </section>
+					 <section>
+						<picture>
+							<img src="images/angle/moller_3_angle_slope_summary.png">						
+						</picture>
+					 </section>
+					 <section>
+						<picture>
+							<img src="images/angle/moller_5_angle_slope_summary.png">						
+						</picture>
+					 </section>
+					 <section>
+						<picture>
+							<img src="images/angle/moller_6_angle_slope_summary.png">						
+						</picture>
+					 </section>
+					 <section>
+						<picture>
+							<img src="images/angle/moller_7_angle_slope_summary.png">						
+						</picture>
+					 </section>
+				</section>
+				<section>
+				 <table>
+                    <tr><td>        Septant</td> <td>          Slope</td>  <td>    Slope Error</td> <td>% Diff Across 2 mm Hori Off</td></tr>
+<tr><td>              1</td> <td>        0.26208</td> <td>        0.02250</td> <td>            2.8</td></tr>
+<tr><td>              2</td> <td>        0.07964</td> <td>        0.02240</td> <td>            0.8</td></tr>
+<tr><td>              3</td> <td>       -0.19853</td> <td>        0.02251</td> <td>           -2.1</td></tr>
+<tr><td>              4</td> <td>       -0.29926</td> <td>        0.02252</td> <td>           -3.2</td></tr>
+<tr><td>              5</td> <td>       -0.21664</td> <td>        0.02246</td> <td>           -2.3</td></tr>
+<tr><td>              6</td> <td>        0.05481</td> <td>        0.02242</td> <td>            0.6</td></tr>
+<tr><td>              7</td> <td>        0.32680</td> <td>        0.02241</td> <td>            3.5</td></tr>
+				   </table>
+				 </section>  
+				<section>
+				     <h3> ELASTIC, RING 2, Position Offsets </h3>
+					 <section>
+						<picture>
+							<img src="images/position/elastic_4_position_slope_summary.png">						
+						</picture>
+					 </section>
+					 <section>
+						<picture>
+							<img src="images/position/elastic_1_position_slope_summary.png">						
+						</picture>
+					 </section>
+					 <section>
+						<picture>
+							<img src="images/position/elastic_2_position_slope_summary.png">						
+						</picture>
+					 </section>
+					 <section>
+						<picture>
+							<img src="images/position/elastic_3_position_slope_summary.png">						
+						</picture>
+					 </section>
+					 <section>
+						<picture>
+							<img src="images/position/elastic_5_position_slope_summary.png">						
+						</picture>
+					 </section>
+					 <section>
+						<picture>
+							<img src="images/position/elastic_6_position_slope_summary.png">						
+						</picture>
+					 </section>
+					 <section>
+						<picture>
+							<img src="images/position/elastic_7_position_slope_summary.png">						
+						</picture>
+					 </section>
+				</section>
+				<section>
+				  <table>
+				   <tr><td>        Septant</td> <td>          Slope</td>  <td>    Slope Error</td> <td>% Diff Across 2 mm Hori Off</td></tr>
+<tr><td>              1</td> <td>        0.21666</td> <td>        0.02140</td> <td>           12.1</td></tr>
+<tr><td>              2</td> <td>        0.04498</td> <td>        0.02291</td> <td>            2.5</td></tr>
+<tr><td>              3</td> <td>       -0.15591</td> <td>        0.02067</td> <td>           -8.9</td></tr>
+<tr><td>              4</td> <td>       -0.22954</td> <td>        0.02263</td> <td>          -12.7</td></tr>
+<tr><td>              5</td> <td>       -0.14205</td> <td>        0.02322</td> <td>           -8.0</td></tr>
+<tr><td>              6</td> <td>        0.06167</td> <td>        0.02186</td> <td>            3.4</td></tr>
+<tr><td>              7</td> <td>        0.16866</td> <td>        0.02172</td> <td>            9.4</td></tr>
+                  </table>
+				</section>
+				<section>
+				     <h3> ELASTIC, RING 2, Angle Offsets </h3>
+					 <section>
+						<picture>
+							<img src="images/angle/elastic_4_angle_slope_summary.png">						
+						</picture>
+					 </section>
+					 <section>
+						<picture>
+							<img src="images/angle/elastic_1_angle_slope_summary.png">						
+						</picture>
+					 </section>
+					 <section>
+						<picture>
+							<img src="images/angle/elastic_2_angle_slope_summary.png">						
+						</picture>
+					 </section>
+					 <section>
+						<picture>
+							<img src="images/angle/elastic_3_angle_slope_summary.png">						
+						</picture>
+					 </section>
+					 <section>
+						<picture>
+							<img src="images/angle/elastic_5_angle_slope_summary.png">						
+						</picture>
+					 </section>
+					 <section>
+						<picture>
+							<img src="images/angle/elastic_6_angle_slope_summary.png">						
+						</picture>
+					 </section>
+					 <section>
+						<picture>
+							<img src="images/angle/elastic_7_angle_slope_summary.png">						
+						</picture>
+					 </section>
+				</section>
+				<section>
+				  <table>
+				    <tr><td>        Septant</td> <td>          Slope</td>  <td>    Slope Error</td> <td>% Diff Across 2 mm Hori Off</td></tr>
+<tr><td>              1</td> <td>        0.26097</td> <td>        0.04100</td> <td>           14.8</td></tr>
+<tr><td>              2</td> <td>        0.01404</td> <td>        0.04162</td> <td>            0.8</td></tr>
+<tr><td>              3</td> <td>       -0.21082</td> <td>        0.04174</td> <td>          -12.0</td></tr>
+<tr><td>              4</td> <td>       -0.28996</td> <td>        0.04282</td> <td>          -16.4</td></tr>
+<tr><td>              5</td> <td>       -0.26812</td> <td>        0.04423</td> <td>          -15.0</td></tr>
+<tr><td>              6</td> <td>        0.11371</td> <td>        0.04349</td> <td>            6.5</td></tr>
+<tr><td>              7</td> <td>        0.31192</td> <td>        0.04171</td> <td>           17.6</td></tr>
+				  </table>
+				</section>
+				<section>
+				  <h3 style="color:Black;"> "Unrastered"-like Case </h3>
+      			  
+				  <section data-background="images/Unrastered.png">	
+				    <ul>
+					  <li> <p style="color:Black;">  Calculate the slope of change in rate as beam moves around in a 5x5 mm square grid at target center. The effect is approximated by analysis cuts on a centered full-rastered (5x5 mm) beam.</p> </li>
+					  <li> <a href="https://myumanitoba-my.sharepoint.com/:x:/g/personal/rahmans_myumanitoba_ca/EesPYOWV-bhLjni1u1nktywBlrvRh56fOlsmbXAZvlH9eg?e=ynXlWf">Follow this link for summary tables</a>
+				            <a href=https://myumanitoba-my.sharepoint.com/:f:/g/personal/rahmans_myumanitoba_ca/EgbO-6PBA3VMqkSjwoazkt8ByQ0CJ_WCqxci0dis9BndWQ?e=dhua5P> and this link for plots </a></li>
+				  </section>
+				</section>				     
+                
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				hash: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/highlight/highlight.js' },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
